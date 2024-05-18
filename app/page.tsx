@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import { getFirestore, collection, where, query, getDocs, CollectionReference, DocumentData } from "firebase/firestore";
+import { collection, where, query, getDocs } from "firebase/firestore";
 import { db } from '../lib/firebase';
 import { BluRay } from '../types/bluray';
 import { useAuth } from '../hooks/useAuth';
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
     }
   }, [user, authLoading]);
 
-  const getBlurays = async (user: User) => {
+  const getBlurays = async (user: any) => {
     try {
       const q = query(collection(db, "blurays"), where("userId", "==", user.uid));
       const querySnapshot = await getDocs(q);
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
 	}
   };
 
-  const getRandomBluraysForCarousel = async (user: User) => {
+  const getRandomBluraysForCarousel = async (user: any) => {
 	// Get all blurays randomly
 	try {
 	  const q = query(collection(db, "blurays"), where("userId", "==", user.uid));
