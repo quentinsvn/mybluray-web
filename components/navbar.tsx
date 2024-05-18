@@ -26,7 +26,7 @@ import { getFirestore, collection, query, where, getDocs, orderBy, limit } from 
 import { useAuth } from '../hooks/useAuth';
 import { BluRay } from '../types/bluray';
 import { auth } from '../lib/firebase';
-import {DropdownItem, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
+import {Avatar} from "@nextui-org/react";
 
 export const Navbar: React.FC = () => {
   const { user, loading } = useAuth();
@@ -78,6 +78,10 @@ export const Navbar: React.FC = () => {
           inputWrapper: "bg-default-100",
           input: "text-sm",
         }}
+        style={{
+          width: "400px",
+          maxWidth: "100%",
+        }}
         labelPlacement="outside"
         placeholder="Rechercher un bluray..."
         startContent={
@@ -88,19 +92,27 @@ export const Navbar: React.FC = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />    
       {searchResults.length > 0 && (
-        <Dropdown placement="bottom-end">
-          <DropdownMenu aria-label="search results" variant="flat">
+        <ul
+          className="absolute z-10 w-full bg-default-100 shadow-lg rounded-md mt-1"
+        >
             {searchResults.map((bluray) => (
-              <DropdownItem 
-                key={bluray.id} 
-                onClick={() => router.push(`/bluray/${bluray.id}`)}
-                startContent={<Avatar src={bluray.image} alt={bluray.title} size="sm" />}
+              <li key={bluray.id}
+                className="p-2 hover:bg-default-200 cursor-pointer rounded-md transition-colors duration-200 ease-in-out"
+                onClick={() => setSearchTerm("")}
               >
-                {bluray.title}
-              </DropdownItem>
+                <div 
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+                >
+                  <Avatar src={bluray.image} size="sm" className="mr-2" />
+                  <span>{bluray.title}</span>                  
+                </div>
+
+              </li>
             ))}
-          </DropdownMenu>
-        </Dropdown>
+        </ul>
       )}
     </div>
   );
