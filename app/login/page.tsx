@@ -5,8 +5,6 @@ import { Card, Input, Button, Spacer, CardBody, CardHeader } from '@nextui-org/r
 import React from 'react';
 // style
 import './style.css';
-import { initializeApp } from "firebase/app";
-import { firebase } from '../../lib/firebase';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
