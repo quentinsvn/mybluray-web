@@ -6,8 +6,6 @@ import Link from 'next/link';
 // style
 import './style.css';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { initializeApp } from "firebase/app";
-import { firebase } from '../../lib/firebase';
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { useRouter } from 'next/navigation';
 
