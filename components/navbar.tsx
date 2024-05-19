@@ -96,7 +96,7 @@ export const Navbar: React.FC = () => {
           className="absolute z-10 w-full bg-default-100 shadow-lg rounded-md mt-1"
         >
             {searchResults.map((bluray) => (
-              <Link href={`/bluray/${bluray.id}`} passHref>
+              <Link href={`/bluray/${bluray.id}`} key={bluray.id} passHref>
               <li key={bluray.id}
                 className="p-2 hover:bg-default-200 cursor-pointer rounded-md transition-colors duration-200 ease-in-out"
                 onClick={() => setSearchTerm("")}
