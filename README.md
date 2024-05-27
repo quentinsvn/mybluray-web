@@ -1,7 +1,7 @@
 # MyBluray
 
 <div align="center">
-<img src="https://cdn.discordapp.com/attachments/345949387769249793/1241914202868809800/screencapture-mybluray-vercel-app-2024-05-20-02_42_57.png?ex=664bee3b&is=664a9cbb&hm=da51a4c1bbe3b8bec2c74a4a535f0939ce148a8a21ddb72c5897fdd22cacb145&" alt="home" width="500"/>
+<img src="https://media.discordapp.net/attachments/1081337869500682301/1244664633579802730/screencapture-mybluray-vercel-app-2024-05-27-16_52_35.png?ex=6655efc5&is=66549e45&hm=f5d22de786922fac92983c976c0587c02c90934a9f22a2986fc367c9ce1e9ed5&=&format=webp&quality=lossless&width=803&height=510" alt="home" width="500"/>
 </div>
 
 ## Description
@@ -79,11 +79,11 @@ After modifying the `.npmrc` file, you need to run `pnpm install` again to ensur
 
 #### Home
 <div align="center">
-<img src="https://media.discordapp.net/attachments/345949387769249793/1241914202868809800/screencapture-mybluray-vercel-app-2024-05-20-02_42_57.png?ex=664bee3b&is=664a9cbb&hm=da51a4c1bbe3b8bec2c74a4a535f0939ce148a8a21ddb72c5897fdd22cacb145&" alt="home" width="500"/>
+<img src="https://media.discordapp.net/attachments/1081337869500682301/1244664633579802730/screencapture-mybluray-vercel-app-2024-05-27-16_52_35.png?ex=6655efc5&is=66549e45&hm=f5d22de786922fac92983c976c0587c02c90934a9f22a2986fc367c9ce1e9ed5&=&format=webp&quality=lossless" alt="home" width="500"/>
 </div>
 
 #### Bluray/DVD détails
 <div align="center">
-<img src="https://media.discordapp.net/attachments/345949387769249793/1241917882288308244/bluray_details_mybluray.png?ex=664bf1a8&is=664aa028&hm=7b9efc68c6b92ad544fff9f52e1764b32bc2c52d2330b99a498a7bbb324a7f7d&" alt="details" width="500"/>
+<img src="https://media.discordapp.net/attachments/1081337869500682301/1244664925071343616/screencapture-mybluray-vercel-app-bluray-G9QphT4CxB2RdWU1NGTp-2024-05-27-16_53_52.png?ex=6655f00a&is=66549e8a&hm=09c7241f0e6a5a277a4865cb61891a500b6dab15e4457bf4bd521acfcb3e932e&=&format=webp&quality=lossless" alt="details" width="500"/>
 </div>
 
